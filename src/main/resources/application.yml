@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: tennis-api
+  data:
+    mongodb:
+      uri: mongodb://tennis:ahDgBl6JiXbucAUq3oy4tlbkJofJDCU4QD4nNOgHRlk9OAQWscs1Ocfa38hF59LYK16SxUBBhZC9ACDbbQJfcQ==@tennis.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@tennis@
+      database: tennis
+
+server:
+  port: 8080
+
+logging:
+  level:
+    org.springframework.data.mongodb.core.ReactiveMongoTemplate: DEBUG
+#    web: TRACE
+#    org.springframework.web: TRACE
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui-custom.html
+    operationsSorter: method
